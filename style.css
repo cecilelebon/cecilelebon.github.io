@@ -15,42 +15,41 @@ DO:
 1. change the text color after you look at the HTML and the image you're reproducing
 2. uncomment the borders 
 3. do what you need to fit the outlines
-4. get in trouble with sidebar sticking out at the bottom and solve the problem
+4. get in trouble with footer and solve the problem
 
 */
 
+
 body{
 	/* change this to some color to see the text. ever heard of RGBA? */
-	color: antiquewhite;
+	color: white;
 }
 
 div.wrapper {
     margin: 0 auto;
 	width: 960px;
 	border: 2px dotted yellow;
-overflow: auto
-       /*overflow: hidden; ADD height: 
-	/overflow: scroll;
-    clearfix CHECK*/
 }
 
 
 div.content {
-	margin-left: 120px;
+    padding: 10px;
 
 }
 
 div.sidebar {
-	float:left;
 	margin: 10px;
 	width: 100px;
 	border: 2px dotted yellow;
+    padding: 10px;
+	float: left;
 }
 
 
-header {
-	margin: 10px;
+header, footer {
 	padding: 10px;
+    margin: 10px;
 	border: 2px dotted yellow;
-}
+	clear: both;
 
+}
