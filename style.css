@@ -1,55 +1,98 @@
-/* in case I didn't tell you yet - use this whenever you do anything */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* 
-
-This task doesn't require setting any widths and heights so don't. 
-You will never need any pixel values other than 10px.
-Well, all the exceptions to this are already written just below (width:960px and 100px)
-
-Your job is to set some margins, paddings and floats (spoiler: and then you get in trouble :) )
-
-Oh, and you don't need any more selectors here, but you can add some if you want.
-
-DO:
-1. change the text color after you look at the HTML and the image you're reproducing
-2. uncomment the borders 
-3. do what you need to fit the outlines
-4. get in trouble with footer and solve the problem
-
-*/
-
-
-body{
-	/* change this to some color to see the text. ever heard of RGBA? */
-	color: white;
+body {
+    margin: center;
+    font-family: sans-serif;
+    background: dimgrey;
+    font-size: 12px;
+    color: white;
 }
 
-div.wrapper {
-    margin: 0 auto;
-	width: 960px;
-	border: 2px dotted yellow;
+.wrapper{
+    
+    width: 1904px;
+    margin: 20px;
+    overflow:auto;
+}
+
+.h1{
+    width: 1080px;
+}
+
+.header{
+    overflow: auto;
+    width: 1904px;
+    height: 400px;
+    background: transparent url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b7fd5b35025601.56e7163a7a091.jpg);
+    background-repeat:no-repeat;
+
+    
+}
+
+.menu{
+    width:1904px;
+    float: left;
+    
+}
+.menu>ul{
+    padding:0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgrey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: black;
+}
+
+.menu>ul>li{
+    list-style-type: none;
+}
+    
+.menu>ul>li>a{
+display: block;
+    border: 1px solid #000;
+    padding: 20px;
+    margin:3px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
 }
 
 
-div.content {
-    padding: 10px;
-
+.forest{
+    background: transparent url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/18602035025601.56e72319d29c7.gif") no-repeat center;
+    height: 300px;
+   
 }
 
-div.sidebar {
-	margin: 10px;
-	width: 100px;
-	border: 2px dotted yellow;
-    padding: 10px;
-	float: left;
+.content{
+    padding: 20px;
+    margin-left: 0px;
+    
 }
 
 
-header, footer {
-	padding: 10px;
-    margin: 10px;
-	border: 2px dotted yellow;
-	clear: both;
 
-}
+
+
+
+
+
