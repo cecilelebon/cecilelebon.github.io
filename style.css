@@ -24,10 +24,12 @@ body {
 
 
 .wrapper {
+    list-style-type: none;
     width: 1200px;
     margin: 0 auto;
     overflow: auto;
 }
+
 
 .menu {
     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/da979d36570337.57210257e8c27.jpg);
@@ -86,14 +88,15 @@ body {
 .menu>ul>li>a {
     display: block;
     border: none;
-    padding: 20px;
+    padding: 10px;
     margin: 3px;
     text-align: center;
-    color: white;
-    font-size: 24px;
+    color: blue;
+    font-size: 14px;
 }
 
 .social>ul>li>a {
+    display: block;
     border: 1px dotted blue;
     list-style-type: none;
     float:left;
@@ -101,7 +104,28 @@ body {
     padding: 20px;
 }
 
-.content {
-    padding: 20px;
-    margin-left: 300px;
+
+
+.photo{
+    list-style-type: none;
+    color: gray;
+    border: 1px dotted brown;
+    width: 1200px;
+    height: 674px;
+    float: left;    
+}
+
+.video{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.illu{
+    list-style-type: none;
+    color: gray;
+    border: 1px dotted brown;
+    width: 1200px;
+    height: 674px;
+    float: left;  
 }
