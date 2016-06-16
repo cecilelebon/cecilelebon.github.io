@@ -25,8 +25,8 @@ $(".motiongraphics").click(function() {
 });
 
 
-$(".motiongraphics").click(function() {
+$(".button").click(function() {
     $('html, body').animate({
-        scrollTop: $(".motion").offset().top
+        scrollTop: $(".menu").offset().top
     }, 1000);
 });

@@ -1,7 +1,7 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-    font-family: sans-serif;
+    font-family: "Arial", "verdana", sans-serif;
     background: white;
     font-size: 12px;
 }
@@ -12,16 +12,6 @@ body {
     height: 70px;
     float: left;
 }
-
-@font-face{ 
-	font-family: 'Neris-SemiBold-webfont';
-	src: url('Neris-SemiBold-webfont.eot');
-	src: url('Neris-SemiBold-webfont.eot?iefix') format('eot'),
-	     url('Neris-SemiBold-webfont.woff') format('woff'),
-	     url('Neris-SemiBold-webfont.ttf') format('truetype'),
-	     url('Neris-SemiBold-webfont.svg#webfont') format('svg');
-}
-
 
 .wrapper {
     list-style-type: none;
@@ -58,7 +48,7 @@ body {
 
 .social {
     border: 1px dotted green;
-    width: 300px;
+    width: 140px;
     height: 70px;
     float: right;
 }
@@ -76,6 +66,7 @@ body {
     float:left;
     margin: 0px;
     padding: 0px;
+    font-size: 20px;
 }
 
 .social>ul>li {
@@ -91,20 +82,33 @@ body {
     padding: 10px;
     margin: 3px;
     text-align: center;
-    color: blue;
-    font-size: 14px;
+    color: white;
+}
+
+.menu>ul>li:hover {
+    background-color: white;
+}
+
+.menu>ul>li>a:hover {
+    color: black;
 }
 
 .social>ul>li>a {
     display: block;
     border: 1px dotted blue;
     list-style-type: none;
-    float:left;
-    margin: 10px;
+    float: right;
     padding: 20px;
 }
 
+.social>ul>li>a>img:hover {
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+    /* use text-shadow for logo with same kind of typeface */
+}
 
+.social>ul>li:hover {
+    background-color: lightgray;
+}
 
 .photo{
     list-style-type: none;
@@ -129,3 +133,16 @@ body {
     height: 674px;
     float: left;  
 }
+
+.button {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: lightgrey;
+}
+
